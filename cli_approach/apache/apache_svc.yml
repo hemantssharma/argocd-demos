@@ -7,7 +7,7 @@ spec:
   selector:
     app: apache
   ports:
-  - port: 80
-    targetPort: 80
+  - port: 82
+    targetPort: 82
     protocol: TCP
   type: NodePort
