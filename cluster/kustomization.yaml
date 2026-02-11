@@ -1,3 +1,7 @@
 resources:
   - deployment.yaml
   - service.yaml
+
+images:
+  - name: mrhemantksharma/mywebapp
+    newTag: v1.1
