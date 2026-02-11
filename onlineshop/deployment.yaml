@@ -5,7 +5,7 @@ metadata:
   name: online-shop
   namespace: default
 spec:
-  replicas: 5
+  replicas: 1
   selector:
     matchLabels:
       app: online-shop
