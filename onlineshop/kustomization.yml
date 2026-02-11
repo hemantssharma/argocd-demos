@@ -2,5 +2,5 @@ resources:
   - deployment.yaml
   - service.yaml
 images:
-  - name: mrhemantksharma/mywebapp
-    newTag: v1.0
+  - name: mrhemantksharma/online-shop:v1.0.0
+    newTag: v1.0.0
