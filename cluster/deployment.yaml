@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
       - name: mywebapp
-        image: 1nfosecsingh/mywebapp:v1.2
+        image: mrhemantksharma/mywebapp:v1.1
         ports:
         - containerPort: 80
