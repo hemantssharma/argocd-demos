@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: online-shop
-        image: amitabhdevops/online_shop:latest
+        image: mrhemantksharma/online-shop:v1.0.0
         ports:
         - containerPort: 3000
         resources:
