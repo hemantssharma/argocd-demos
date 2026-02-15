@@ -1,0 +1,9 @@
+resources:
+  - ../../base
+  - secret.yaml
+
+namespace: chai-dev
+
+images:
+  - name: mrhemantksharma/chai-app
+    newTag: 1.0.0
