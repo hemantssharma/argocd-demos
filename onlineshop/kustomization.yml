@@ -3,4 +3,4 @@ resources:
   - service.yaml
 images:
   - name: mrhemantksharma/online-shop
-    newTag: v1.0.0
+    newTag: v1.0.2
