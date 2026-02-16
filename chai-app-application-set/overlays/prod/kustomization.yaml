@@ -2,7 +2,7 @@ resources:
   - ../../base
   - secret.yaml
 
-namespace: chai-test
+namespace: chai-prod
 
 images:
   - name: mrhemantksharma/chai-app
