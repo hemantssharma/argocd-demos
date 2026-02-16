@@ -4,5 +4,4 @@ resources:
 namespace: chai-dev
 images:
   - name: mrhemantksharma/chai-app
-    newTag: dev-1.0.1
-    newName: mrhemantksharma/chai-app
+    newTag: dev-1.0.2
