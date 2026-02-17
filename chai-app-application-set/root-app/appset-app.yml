@@ -1,0 +1,34 @@
+apiVersion: argoproj.io/v1alpha1
+kind: ApplicationSet
+metadata:
+  name: chai-app
+  namespace: argocd
+spec:
+  generators:
+    - list:
+        elements:
+          - env: dev
+            namespace: chai-dev
+          - env: test
+            namespace: chai-test
+          - env: prod
+            namespace: chai-prod
+
+  template:
+    metadata:
+      name: chai-app-{{env}}
+    spec:
+      project: default
+      source:
+        repoURL: https://github.com/hemantssharma/argocd-demos.git
+        targetRevision: feature
+        path: chai-app-application-set/overlays/{{env}}
+      destination:
+        name: https://kubernetes.default.svc
+        namespace: '{{namespace}}'
+      syncPolicy:
+        automated:
+          prune: true
+          selfHeal: true
+        syncOptions:
+          - CreateNamespace=true
