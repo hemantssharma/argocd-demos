@@ -4,4 +4,4 @@ resources:
 namespace: chai-test
 images:
   - name: mrhemantksharma/chai-app
-    newTag: test-1.0.1
+    newTag: test-1.0.0
