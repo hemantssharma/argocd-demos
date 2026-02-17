@@ -21,7 +21,7 @@ spec:
       project: default
       source:
         repoURL: https://github.com/hemantssharma/argocd-demos.git
-        targetRevision: feature
+        targetRevision: main
         path: chai-app-application-set/overlays/{{env}}
       destination:
         name: in-cluster
