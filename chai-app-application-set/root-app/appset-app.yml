@@ -24,7 +24,7 @@ spec:
         targetRevision: feature
         path: chai-app-application-set/overlays/{{env}}
       destination:
-        name: https://kubernetes.default.svc
+        name: in-cluster
         namespace: '{{namespace}}'
       syncPolicy:
         automated:
